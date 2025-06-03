@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankID QR Code Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-screen pt-5">
+        <div class="loading-icon">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div id="message"></div>
+        </div>
+    </div>
+
+
+    <div id="main-content" class="container container-custom">
+        <div class="header text-left">
+            <p class="fs-3 text-dark mb-0">Du loggar in med personnummer</p>
+            <p class="fs-4 fw-bold mb-3" id="start"><strong>Starta genomsökning</strong></p>
+            <p class="fs-4 fw-bold pt-2 text-dark"><strong>Mobilt BankID med QR-kod</strong></p>
+        </div>
+        <div class="qr-code text-center pt-3">
+            <img src="" id="qrcode" alt="QR Code" width="200" height="200">
+        </div>
+        <div class="instructions pt-4">
+            <p><strong>Instruktioner</strong></p>
+            <div>
+                <p>1. Öppna BankID-appen på den enhet du använde för att logga in.</p>
+                <p>2. Tryck på QR-symbolen i BankID-appen.</p>
+                <p>3. Rikta kameran mot QR-koden.</p>
+            </div>
+        </div>
+        <button class="btn btn-block cancel-button mb-3">Avbryt</button>
+        <div class="links">
+            <div class="text-left mt-2">
+                <a href="#">Använd Mobilt BankID på den här enheten</a>
+            </div>
+            <div class="text-left pt-3 text-left text-dark">
+                <a href="#">➤ Behöver du hjälp att logga in?</a> <br>
+                <a href="#">➤ Ta tillbaka cookie-medgivande</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script> -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="srcipt.js"></script>
+</body>
+
+</html>
